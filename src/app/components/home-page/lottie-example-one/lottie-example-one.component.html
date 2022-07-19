@@ -1,0 +1,19 @@
+<div class="demo">
+    <ng-lottie
+      *ngIf="shown"
+      width="600px"
+      height="500px"
+      containerClass="moving-box moving-box-second-class"
+      [styles]="styles"
+      [options]="options"
+      (animationCreated)="animationCreated($event)"
+      (destroy)="destroy($event)"
+    ></ng-lottie>
+  
+    <div class="controls">
+  
+      <div class="actions">
+        <button class="update-animation" (click)="updateAnimation()">Update animation</button>
+      </div>
+    </div>
+  </div>
